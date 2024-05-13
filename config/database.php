@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'mongodb'),
 
     /*
     |--------------------------------------------------------------------------
@@ -34,6 +34,14 @@ return [
     */
 
     'connections' => [
+
+
+        'mongodb' => [
+            'driver' => 'mongodb',
+            'dsn' => env('mongodb+srv://Chris:2218Link@pruebalaravel.h6plg4k.mongodb.net/Prueba?retryWrites=true&w=majority'),
+            'database' => 'myappdb',
+
+
 
         'sqlite' => [
             'driver' => 'sqlite',
