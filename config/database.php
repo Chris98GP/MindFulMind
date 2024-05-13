@@ -38,8 +38,9 @@ return [
 
         'mongodb' => [
             'driver' => 'mongodb',
-            'dsn' => env('mongodb+srv://Chris:2218Link@pruebalaravel.h6plg4k.mongodb.net/Prueba?retryWrites=true&w=majority'),
-            'database' => 'myappdb'],
+            'dsn' => env('DB_URI', 'mongodb+srv://Chris:2218Link@pruebalaravel.h6plg4k.mongodb.net/Prueba?retryWrites=true&w=majority'),
+            'database' => 'Prueba',
+        ],
             
 
 
